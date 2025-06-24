@@ -48,8 +48,8 @@ with st.expander('Input features'):
   input_penguins
 
 
-#Data preparation
-# Encode x
+# Data preparation
+# Encode X
 encode = ['island', 'sex']
 df_penguins = pd.get_dummies(input_penguins, prefix=encode)
 input_row = df_penguins[:1]
@@ -64,7 +64,7 @@ def target_encode(val):
 y = y_raw.apply(target_encode)
 
 with st.expander('Data preparation'):
-  st.write('**Encoded x (input penguin)**')
+  st.write('**Encoded X (input penguin)**')
   input_row
   st.write('**Encoded y**')
   y
