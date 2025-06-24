@@ -45,3 +45,4 @@ with st.expander('input features'):
   st.write('**Input penguin**')
   input_df
   st.write('**Combined penguins data**')
+  input_penguins
