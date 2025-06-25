@@ -82,7 +82,7 @@ clf.fit(X,y)
 prediction = clf.predict(input_row)
 prediction_proba = clf.predict_proba(input_row)
 
-df_prediction_proba = pd.DataFrame[prediction]
+df_prediction_proba = pd.DataFrame(prediction)
 df_prediction_proba.column = ['Adelie', 'Chainstrap', 'Gentoo']
 df_prediction_proba.rename(columns={0: 'Adelie',
                                     1: 'Chinstrap',
